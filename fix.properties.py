@@ -16,7 +16,7 @@ class Account2:
         self._full_name = f"{self._first_name} {self._last_name}"
         return [self._first_name, self._full_name]
 
-    forename = property(get_forename)
+    # forename = property(get_forename)
 
     @property
     def get_surname(self):
@@ -28,7 +28,7 @@ class Account2:
         self._full_name = f"{self._first_name} {self._last_name}"
         return [self._last_name, self._full_name]
 
-    surname = property(get_surname)
+    # surname = property(get_surname)
 
 barry = Account2("barry", "jones", 1000)
 
