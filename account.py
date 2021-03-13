@@ -3,11 +3,12 @@ from datetime import date, datetime
 
 class Account:
 
-    def __init__(self, first_name, surname, deposit=0):
+    def __init__(self, first_name, last_name, deposit=0):
         self._first_name = first_name.capitalize()
-        self._last_name = surname.capitalize()
+        self._last_name = last_name.capitalize()
         self._full_name = f"{self._first_name} {self._last_name}"
-        self.balance = int(deposit)
+        self.balance = float(deposit)  # maybe have an error/try-except/if statement to catch if this isn't an float
+        # add exception for > 2dp deposit
 
     @property
     def forename(self):
