@@ -17,7 +17,7 @@ def create_customer(first_name, last_name, email, dob, country, postcode, number
         return cust
 
 
-suh = create_customer("Suh", "Rashid", "hasuh@hotmail.co.uk", "1999-12-31", "Germany", "WD17 3AN", "07958523651",
+suh = create_customer("Suh", "Rashid", "hasuh@hotmail.co.uk", "1999-12-31", "Germany", "WD17 3AN", "07958123651",
                 "female")
 jackie = create_customer("Jackie", "woodburn", "jackie.woodburn@gmail.com", "2005-05-10", "France", "SW19 7AB",
                     "07512685617", "female")
@@ -34,4 +34,3 @@ except AgeRestrictedError as err:
     print(err)
 else:
     print("Purchase successful.")
-

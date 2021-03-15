@@ -10,7 +10,7 @@ print(michelle._full_name)
 print(f"Your balance is {michelle}") # demonstrate overwritten __str__
 
 try:
-    michelle.withdraw(-10.09)
+    michelle.withdraw(200)
 except NegativeAmountError as err:
     print(f"Withdrawal unsuccessful. {err}")
 except InsufficientFundsException as err:
